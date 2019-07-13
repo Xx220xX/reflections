@@ -1,0 +1,73 @@
+Procedimento para a criação de repositório remoto:
+
+git init  		## inicia um repositorio
+git status   	## para ver arquidos tracked ou untracked
+git add .		## adiciona todas as mudanças para a stagging
+			## area
+git commit -m "primeiro commit" ## adiciona commit
+
+## Cria repositorio no GitHub
+## Configura chave ssh com o comando:
+## ssh-keygen
+## Será criado uma pasta ssh em C:\Users\nome_usuario
+## Copie o conteudo de id_rsa.pub para GitHub em
+## configuracoes em SSH KEYS
+## OBS: ESSE PROCESSO SÓ É REALIZADO PARA A CRIAÇÃO DO 
+## PRIMEIRO REPOSITORIO REMOTO, JA QUE PARA O MESMO PC É USADA
+## A MESMA CHAVE SSH
+
+## Com a chave ssh(Secure Shell) configurada
+git remote add origin git@github.com:LeslyMontufar/reflections.git
+
+git push -u origin master 	## leva os arquivos locais para o
+					## github
+					## rep remoto --> github
+
+## Outro comando útil: github --> rep remoto
+git pull origin master
+
+## Outros:
+git checkout master
+git log 		## mostra histórico dos commits
+
+git commit -a -m "primeiro commit" ## todas as mudancas -all
+					## nao precisa de git add . antes
+
+git diff [ID_commit_velho/certo] [ID_commit_novo/com-bug]
+## compara versoes
+
+git diff 			## compare the versions of: working
+				## directory and staging area
+git reset [file3] 			## to untrack a file
+git add [file1] [file2] [file3] 	## add files to the stagging
+						## area
+git diff --staged 		## compare the versions of: staging 
+					## area and commit1
+ls -a 			## mostra todos os arquivos, até os 
+				## escondidos (.git)
+
+
+## Referencias:
+## https://www.youtube.com/watch?v=aEGkYK6AVRg
+
+## git --help [command]	## to see command documentation
+
+
+
+
+
+
+
+
+
+Como excluir repositorio:
+
+git remote -v 		## ver remotes ativos
+git remote rm origin  ## remove a brach: master
+
+Excluir definitivamente:
+Exclui a pasta escondida .git !
+
+
+## Referencias:
+## https://www.youtube.com/watch?v=NtSxYKPp8jE
