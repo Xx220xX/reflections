@@ -1,0 +1,62 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	To initilize a repository use:
+	git init 	# inicialize a  repository
+	git status	# show the last commit
+	
+	# Whem I initialize a repository, I create a .git file, which will armazenate the history of commits.
+	# I need to do this in order to save my commits.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	The staging area is a preparation area, that indicates which files will be part of the whole commit.
+	The working directory is the place where I crete the repository and can be desktop/udacityreflections/version-control/reflections
+	The repository is inside the working directory and initialize without any files and any commits.
+
+	working directory -> [repository - traked files][files out of the repository initialized - untraked files] 
+
+	{staging area: [file1] [file2] [file3]}		# git status to see traked and untraked files
+												# git add [file1] [file2] [file3] to add files to the stagging area
+												# git reset [file3] to untrack a file
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+	Vai colocando os arquivos na staging area e depois de colocar todos que foram modificados, faz o commit
+	(por alteração lógica).
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+	
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+
+
+# git status 						# to see traked and untraked files / show the last commit
+# git diff [ID_commit_velho/certo] [ID_commit_novo/com-bug]
+# git checkout [ID_commit_verificar]
+# git log 							# to see all the commits
+# git init 							# inicialize a  repository
+# git add [file1] [file2] [file3] 	# to add files to the stagging area
+# git reset [file3] 				# to untrack a file
+# git commit
+
+
+
+# git diff 							# compare the versions of: working directory and staging area 
+# git diff --staged 				# compare the versions of: staging area and commit1
+# git diff commit1_ID commit2_ID	# compare the versions of: commit1 and commit2
+
+
+# git checkout master
+
+# ls -a 							# mostra todos os arquivos, até os escondidos (.git)

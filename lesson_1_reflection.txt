@@ -1,0 +1,65 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    With the diff, it's not necessary to review the code line per line, I just hace to see the lines that was changed. 
+    Therefore, with the diff, find a bug is more faster and easily.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    O histórico possibilita a verificar quais as mudanças que foram que foram realizadas de commit a outro commit, 
+    assim fica mais fácil verificar erros nos códigos
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The pro is that I always will be carefree about saving the version, because I will know that it's already saved.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Os arquivos do Google Docs são independentes, ou seja, modificar um arquivo não afetará outro. Já os códigos salvos
+    no Git geralmente compõem projetos maiores, o que significa que os códigos estão interligados e é preciso salvar todos
+    os códigos num só commit, pois cada código forma parte de um todo, que seria o resultado final do projeto. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    cd desktop
+    cd asteroids
+    git log # permite ver todas as modificações do projeto, em que cada modificação é organizada em um commit
+    git diff (file_1_commit_ID) (file_2_commit_ID) # agora que eu já vi os commits com o git log, eu posso compará-los 
+    # para isso uso os ID dos commits que quero comparar, vermelho-linhas deletadas e verde-linhas adicionadas 
+    # ctrl + insert : copiar
+    # shift + insert : colar
+
+    # pode executar o código entrando em asteroids, clicar com o botão direito no arquivo html (index) e abrí-lo no Google Chrome
+    # aí vejo como ficou o jogo
+    # se deu um bug, para ver como o jogo funcinava antes do commit com o bug:
+    git checkout (commit_ID_of_the_bug)
+
+    # pode ir fazendo checkout de commit em commit até achar o primeiro commit do bug
+    # pois que acha o bug do commit: modifica o arquivo e faz outro commit ou volta ao ID do commit mais recente, por isso
+    # precisa memorizar o ID do commit mais recente ou anotar :)
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Porque eu terei certeza que se der tudo errado nesse novo commit, vou poder voltar para o anterior usando o checkout para
+    ver até onde fiz tudo certo, ou até onde não tinha o bug.
+    "Sem medo de falir o projeto todo."
+    "With version control, you can explore in a large space."
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I want to use git in order to improve my programing skils and be able to start exceptional projects.
+
+
+25ede836903881848fea811df5b687b59d962da3
+
+df035382c41b4d0cda86a1aa30b53f15bef05b53
+
+
+	cd ~	# para ir para a pasta raiz
+	mv Downloads/git-completion.bash.txt git-completion.bash	# move o arquivo x do dretório xx para a pasta raíz (~), 
+	# pois é a pasta atual
