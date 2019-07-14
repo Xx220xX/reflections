@@ -1,3 +1,6 @@
+#####################################################################
+#####################################################################
+
 Procedimento para a criação de repositório remoto:
 
 git init  		## inicia um repositorio
@@ -56,8 +59,8 @@ ls -a 			## mostra todos os arquivos, até os
 
 
 
-
-
+#####################################################################
+#####################################################################
 
 
 Como excluir repositorio:
@@ -71,3 +74,17 @@ Exclui a pasta escondida .git !
 
 ## Referencias:
 ## https://www.youtube.com/watch?v=NtSxYKPp8jE
+
+
+#####################################################################
+#####################################################################
+
+Como admimistrar repositório do GitHub já com commits:
+
+git clone https://github.com/LeslyMontufar/octave-programs.git
+git add .
+git commit -m "primeiro commit local"
+git push -u origin master
+
+# obs: shift + insert ---- copy
+#	       insert ---- paste
