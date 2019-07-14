@@ -86,5 +86,8 @@ git add .
 git commit -m "primeiro commit local"
 git push -u origin master
 
-# obs: shift + insert ---- copy
-#	       insert ---- paste
+## obs: shift + insert ---- copy
+##	       insert ---- paste
+
+## git clone copia tudo do repositorio github para o desktop
+## construindo automaticamente um repositorio remoto
