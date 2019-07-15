@@ -1,37 +1,53 @@
 #####################################################################
 #####################################################################
 
-Procedimento para a criaÁ„o de repositÛrio remoto:
+Procedimento para a cria√ß√£o de reposit√≥rio remoto:
 
 git init  		## inicia um repositorio
 git status   	## para ver arquidos tracked ou untracked
-git add .		## adiciona todas as mudanÁas para a stagging
+git add .		## adiciona todas as mudan√ßas para a stagging
 			## area
 git commit -m "primeiro commit" ## adiciona commit
 
 ## Cria repositorio no GitHub
+
+# --- metodo 1 ( ssh )
+
+
 ## Configura chave ssh com o comando:
 ## ssh-keygen
-## Ser· criado uma pasta ssh em C:\Users\nome_usuario
+## Ser√° criado uma pasta ssh em C:\Users\nome_usuario
 ## Copie o conteudo de id_rsa.pub para GitHub em
 ## configuracoes em SSH KEYS
-## OBS: ESSE PROCESSO S” … REALIZADO PARA A CRIA«√O DO 
-## PRIMEIRO REPOSITORIO REMOTO, JA QUE PARA O MESMO PC … USADA
+## OBS: ESSE PROCESSO S√ì √â REALIZADO PARA A CRIA√á√ÉO DO 
+## PRIMEIRO REPOSITORIO REMOTO, JA QUE PARA O MESMO PC √â USADA
 ## A MESMA CHAVE SSH
 
 ## Com a chave ssh(Secure Shell) configurada
 git remote add origin git@github.com:LeslyMontufar/reflections.git
 
+# --- metodo 2 (http)
+# crie um repositorio no github
+# copie o link
+
+# comando no gitbash
+    ( git init )
+    ( git remote add NAME  https://github.com/user/repositorio
+   
+  
+    
+
+
 git push -u origin master 	## leva os arquivos locais para o
 					## github
 					## rep remoto --> github
 
-## Outro comando ˙til: github --> rep remoto
+## Outro comando √∫til: github --> rep remoto
 git pull origin master
 
 ## Outros:
 git checkout master
-git log 		## mostra histÛrico dos commits
+git log 		## mostra hist√≥rico dos commits
 
 git commit -a -m "primeiro commit" ## todas as mudancas -all
 					## nao precisa de git add . antes
@@ -46,7 +62,7 @@ git add [file1] [file2] [file3] 	## add files to the stagging
 						## area
 git diff --staged 		## compare the versions of: staging 
 					## area and commit1
-ls -a 			## mostra todos os arquivos, atÈ os 
+ls -a 			## mostra todos os arquivos, at√© os 
 				## escondidos (.git)
 
 
@@ -79,7 +95,7 @@ Exclui a pasta escondida .git !
 #####################################################################
 #####################################################################
 
-Como admimistrar repositÛrio do GitHub j· com commits:
+Como admimistrar reposit√≥rio do GitHub j√° com commits:
 
 git clone https://github.com/LeslyMontufar/octave-programs.git
 git add .
